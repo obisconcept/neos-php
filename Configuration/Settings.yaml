@@ -1,0 +1,14 @@
+TYPO3:
+  Neos:
+    typoScript:
+      autoInclude:
+        'ObisConcept.NeosPhp': TRUE
+
+    userInterface:
+      translation:
+        autoInclude:
+          'ObisConcept.NeosPhp': ['Main', 'NodeTypes/*']
+
+ObisConcept:
+  NeosPhp:
+    templateRootPath: 'resource://ObisConcept.NeosPhp/Private/Templates/'

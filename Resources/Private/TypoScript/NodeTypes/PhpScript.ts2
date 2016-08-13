@@ -1,0 +1,9 @@
+prototype(ObisConcept.NeosPhp:PhpScript) < prototype(TYPO3.Neos:Plugin) {
+
+    package = 'ObisConcept.NeosPhp'
+    controller = 'PhpScript'
+    action = 'index'
+
+    source = ${q(node).property('source')}
+
+}
