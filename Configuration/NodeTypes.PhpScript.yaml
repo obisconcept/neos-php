@@ -5,7 +5,7 @@
     label: i18n
     group: 'plugins'
     inlineEditable: FALSE
-    icon: 'fa fa-puzzle-piece'
+    icon: 'fa fa-code'
     inspector:
       groups:
         settings:
