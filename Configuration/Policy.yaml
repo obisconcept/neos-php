@@ -1,10 +1,10 @@
 privilegeTargets:
-  'TYPO3\Flow\Security\Authorization\Privilege\Method\MethodPrivilege':
+  'Neos\Flow\Security\Authorization\Privilege\Method\MethodPrivilege':
     'ObisConcept.NeosPhp.PhpScript':
       matcher: 'method(ObisConcept\NeosPhp\Controller\PhpScriptController->.*Action())'
 
 roles:
-  'TYPO3.Flow:Everybody':
+  'Neos.Flow:Everybody':
     privileges:
       -
         privilegeTarget: 'ObisConcept.NeosPhp.PhpScript'

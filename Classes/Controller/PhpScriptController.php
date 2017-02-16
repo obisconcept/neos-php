@@ -2,10 +2,10 @@
 
 namespace ObisConcept\NeosPhp\Controller;
 
-use TYPO3\Flow\Annotations as Flow;
-use TYPO3\Flow\Security\Cryptography\HashService;
-use TYPO3\Flow\Security\Context;
-use TYPO3\Flow\Security\Authentication\AuthenticationManagerInterface;
+use Neos\Flow\Annotations as Flow;
+use Neos\Flow\Security\Cryptography\HashService;
+use Neos\Flow\Security\Context;
+use Neos\Flow\Security\Authentication\AuthenticationManagerInterface;
 
 /**
  * Class PhpScriptController
@@ -13,7 +13,7 @@ use TYPO3\Flow\Security\Authentication\AuthenticationManagerInterface;
  * @package ObisConcept\NeosPhp
  * @subpackage Controller
  */
-class PhpScriptController extends \TYPO3\Flow\Mvc\Controller\ActionController {
+class PhpScriptController extends \Neos\Flow\Mvc\Controller\ActionController {
 
     /**
      * Hash service
@@ -48,19 +48,7 @@ class PhpScriptController extends \TYPO3\Flow\Mvc\Controller\ActionController {
 
     }
 
-    /**
-     * Initializes the view before invoking an action method
-     *
-     * @param \TYPO3\Flow\Mvc\View\ViewInterface $view The view to be initialized
-     * @return void
-     */
-    protected function initializeView(\TYPO3\Flow\Mvc\View\ViewInterface $view) {
 
-        if ($view instanceof \TYPO3\Fluid\View\TemplateView) {
-            $view->setTemplateRootPath($this->settings['templateRootPath']);
-        }
-
-    }
 
     public function indexAction() {
 

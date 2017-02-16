@@ -1,14 +1,18 @@
-TYPO3:
-  Neos:
-    typoScript:
-      autoInclude:
-        'ObisConcept.NeosPhp': TRUE
-
-    userInterface:
-      translation:
-        autoInclude:
-          'ObisConcept.NeosPhp': ['Main', 'NodeTypes/*']
 
 ObisConcept:
   NeosPhp:
-    templateRootPath: 'resource://ObisConcept.NeosPhp/Private/Templates/'
+    templatePathAndFilename: 'resource://ObisConcept.NeosPhp/Private/Templates/PhpScript/index.html'
+Neos:
+  Flow:
+    mvc:
+      'ObisConcept.NeosPhp': true
+  Neos:
+    userInterface:
+      translation:
+        autoInclude:
+          ObisConcept.NeosPhp:
+            - Main
+            - 'NodeTypes/*'
+    fusion:
+      autoInclude:
+        ObisConcept.NeosPhp: true

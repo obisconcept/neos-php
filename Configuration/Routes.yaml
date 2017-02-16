@@ -2,17 +2,17 @@
   name:  'Form Post Requests'
   uriPattern: '<FormPostRequestsSubRoutes>'
   defaults:
-    '@package': 'TYPO3.Neos'
+    '@package': 'Neos.Neos'
     '@controller': 'Frontend\Node'
     '@action': 'show'
     '@format': 'html'
   httpMethods: ['POST']
   routeParts:
     'node':
-      handler: 'TYPO3\Neos\Routing\FrontendNodeRoutePartHandlerInterface'
+      handler: 'Neos\Neos\Routing\FrontendNodeRoutePartHandlerInterface'
   subRoutes:
     'FormPostRequestsSubRoutes':
-      package: 'TYPO3.Neos'
+      package: 'Neos.Neos'
       suffix: 'FormPostRequests'
       variables:
         'defaultUriSuffix': '<defaultUriSuffix>'

@@ -1,4 +1,4 @@
-prototype(ObisConcept.NeosPhp:PhpScript) < prototype(TYPO3.Neos:Plugin) {
+prototype(ObisConcept.NeosPhp:PhpScript) < prototype(Neos.Neos:Plugin) {
 
     package = 'ObisConcept.NeosPhp'
     controller = 'PhpScript'
